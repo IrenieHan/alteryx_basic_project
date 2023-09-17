@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="162" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>In_Out_Excel.xlsx
+Query=`Consumer$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row ID" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+            <Field name="Order ID" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Order Date" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Date" />
+            <Field name="Ship Date" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Date" />
+            <Field name="Ship Mode" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Customer ID" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Customer Name" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Segment" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Country" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="City" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Postal Code" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+            <Field name="Region" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Product ID" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Category" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Sub-Category" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Product Name" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_WString" />
+            <Field name="Sales" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+            <Field name="Quantity" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+            <Field name="Discount" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+            <Field name="Profit" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="294" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <type>pie</type>
+              <mode>markers</mode>
+              <name>Pie Chart</name>
+              <valuessrc>Sales</valuessrc>
+              <labelssrc>Sub-Category</labelssrc>
+              <marker>
+                <line>
+                  <width>0</width>
+                </line>
+              </marker>
+              <textinfo>label+percent</textinfo>
+              <showlegend>true</showlegend>
+              <hoverinfo>label+value</hoverinfo>
+            </Traces>
+            <Layout>
+              <title>
+                <text>Furniture</text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+                <size>15</size>
+              </font>
+              <autosize>false</autosize>
+              <width>700</width>
+              <height>849</height>
+              <showlegend>true</showlegend>
+              <hovermode>false</hovermode>
+              <xaxis>
+                <range>-1</range>
+                <range>6</range>
+                <autorange>true</autorange>
+              </xaxis>
+              <yaxis>
+                <range>-1</range>
+                <range>4</range>
+                <autorange>true</autorange>
+              </yaxis>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>80</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+              <piecolorway>#f7fcf5</piecolorway>
+              <piecolorway>#e5f5e0</piecolorway>
+              <piecolorway>#c7e9c0</piecolorway>
+              <piecolorway>#a1d99b</piecolorway>
+              <piecolorway>#74c476</piecolorway>
+              <piecolorway>#41ab5d</piecolorway>
+              <piecolorway>#238b45</piecolorway>
+              <piecolorway>#006d2c</piecolorway>
+              <piecolorway>#00441b</piecolorway>
+              <legend>
+                <font>
+                  <size>15</size>
+                  <family>serif</family>
+                </font>
+                <borderwidth>1</borderwidth>
+                <orientation>v</orientation>
+              </legend>
+            </Layout>
+            <Batch>
+              <ColumnsToBatchBy json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">Category</ColumnsToBatchBy>
+              <TemplateString>@[Category](Category)</TemplateString>
+            </Batch>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+        <Position x="426" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFileType />
+          <OutputFile>C:\Users\xinyi\Desktop\Alteryx\Batch_Charts.png</OutputFile>
+          <BatchMode value="False" />
+          <DataField>Chart</DataField>
+          <Separator>Continuous</Separator>
+          <EmbedDependencies value="False" />
+          <ShowHeader value="False" />
+          <ShowFooter value="False" />
+          <PortraitMode value="True" />
+          <PaperType Width="612" Height="792" Left="36" Right="36" Top="36" Bottom="36" />
+          <DefaultStyles>
+            <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+          </DefaultStyles>
+          <PNGResolution>1</PNGResolution>
+          <PNGLargerAction>squeeze</PNGLargerAction>
+          <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+          <PNGTransparentBG value="False" />
+          <PNGBackColor value="#ffffff" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Interactive_Chart_Tool</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ffeed4f6-4c4e-45ed-b947-d6eb7875360d" />
+      <Telemetry>
+        <PreviousWorkflowId value="6cf9e520-04be-4d8d-a3fe-b2ba66321e39" />
+        <OriginWorkflowId value="6cf9e520-04be-4d8d-a3fe-b2ba66321e39" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

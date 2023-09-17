@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>In_Out_Excel.xlsx
+Query=`Consumer$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row ID" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+            <Field name="Order ID" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Order Date" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Date" />
+            <Field name="Ship Date" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Date" />
+            <Field name="Ship Mode" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Customer ID" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Customer Name" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Segment" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Country" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="City" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Postal Code" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+            <Field name="Region" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Product ID" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Category" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Sub-Category" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Product Name" size="255" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_WString" />
+            <Field name="Sales" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+            <Field name="Quantity" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+            <Field name="Discount" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+            <Field name="Profit" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings>
+        <Position x="222" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">""</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="354" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Order ID" selected="True" />
+            <Field field="Ship Mode" selected="True" />
+            <Field field="Customer ID" selected="True" />
+            <Field field="Customer Name" selected="True" />
+            <Field field="Segment" selected="True" />
+            <Field field="Country" selected="True" />
+            <Field field="City" selected="True" />
+            <Field field="State" selected="True" />
+            <Field field="Region" selected="True" />
+            <Field field="Product ID" selected="True" />
+            <Field field="Category" selected="True" />
+            <Field field="Sub-Category" selected="True" />
+            <Field field="Product Name" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row ID" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+            <Field name="Order ID" size="14" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="String" />
+            <Field name="Order Date" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Date" />
+            <Field name="Ship Date" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Date" />
+            <Field name="Ship Mode" size="14" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="String" />
+            <Field name="Customer ID" size="8" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="String" />
+            <Field name="Customer Name" size="22" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Segment" size="8" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="String" />
+            <Field name="Country" size="13" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="String" />
+            <Field name="City" size="17" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="State" size="20" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_String" />
+            <Field name="Postal Code" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+            <Field name="Region" size="7" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="String" />
+            <Field name="Product ID" size="15" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="String" />
+            <Field name="Category" size="15" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="String" />
+            <Field name="Sub-Category" size="11" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="String" />
+            <Field name="Product Name" size="109" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="V_WString" />
+            <Field name="Sales" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+            <Field name="Quantity" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+            <Field name="Discount" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+            <Field name="Profit" source="File: C:\Users\xinyi\Desktop\Alteryx\In_Out_Excel.xlsx|||`Consumer$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output26" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Auto_Field_Tool</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="73bf4f70-4454-47ae-b8b0-e3a70901dbea" />
+      <Telemetry>
+        <PreviousWorkflowId value="e88060a5-dbfe-4507-bd40-6357b039a071" />
+        <OriginWorkflowId value="e88060a5-dbfe-4507-bd40-6357b039a071" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
